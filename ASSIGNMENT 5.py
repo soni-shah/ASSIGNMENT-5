@@ -23,10 +23,10 @@ student_marks = {
     "Upendra Kumar": 80
 }
 
-user_input = input("Enter your name: ").title().strip()
+user_input = input("Enter student's name: ").title().strip()
 if user_input in student_marks:
     marks = student_marks.get(user_input)
-    print(marks)
+    print(f"{user_input}\' marks : {marks}")
 
 else:
     print("not found")
@@ -46,4 +46,5 @@ print(f"Original list: {lists}")
 slice_list = lists[0:5]
 print(f"Extracts the first five elements: {slice_list}")
 slice_list.reverse()
+
 print(f"Reverses these extracted elements: {slice_list}")
